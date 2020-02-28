@@ -1,0 +1,16 @@
+{
+ "status":[
+     {"0":{
+         "title":"just logged in",
+         "path":"/home"
+     }},
+     {"1":{
+         "title":"Registered Basic Information",
+         "path":""
+     }},
+     {"2":{
+         "title":"uploaded Basic information",
+         "path":""
+     }}
+ ]
+}
