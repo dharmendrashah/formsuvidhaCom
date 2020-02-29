@@ -459,3 +459,27 @@ $("#signature").change(function(){
       return $block
     }
   })(jQuery)
+
+
+  //unknown
+
+  $(document).ready(function(){
+    $('form input[name="spouseName"]').prop("disabled", true);
+$('form input[name="children"]').prop("disabled", true);
+
+    $("form select").change(function(){
+      if($(this).val() == 'Married'){
+        $('form input[name="spouseName"]').removeAttr("disabled")
+        $('form input[name="children"]').removeAttr("disabled")
+        } else if($(this).val() == 'UnMarried'){
+        	 $('form input[name="spouseName"]').prop("disabled", true)
+        $('form input[name="children"]').prop("disabled", true)
+        } else if($(this).val() == 'Male Widow' || 'FeMale Widow' || 'Divorcee'){
+        $('form input[name="spouseName"]').prop("disabled", true);
+        $('form input[name="children"]').removeAttr("disabled")
+        }
+    });
+
+
+});
+  //end

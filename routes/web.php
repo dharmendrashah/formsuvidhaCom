@@ -66,7 +66,8 @@ Route::get('/vacancy/check/{user}', 'formStepsControll@stepsGet')->name('');
 
 Route::post('/vacancy/{clearedStep}/{clearingVacancy}/{user}/localAddress', 'localAddress@store')->name('localAddress');
 
-
+//user information get
+Route::get('/stepsImportant', 'userInformation@index')->name('stepsInportant'); //this will show the user information page
 //routes for detail parcels end
  /*
 end of route

@@ -168,7 +168,7 @@
              <div class="card">
                <div class="card-header p-2">
                  <ul class="nav nav-pills">
-                   <li hidden class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
+                   <li hiddem class="nav-item"><a hidden class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
                    <li hidden class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li>
                    <li class="nav-item"><a class="nav-link active" href="#settings" data-toggle="tab">Update Profile</a></li>
                  </ul>
