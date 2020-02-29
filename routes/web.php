@@ -68,6 +68,8 @@ Route::post('/vacancy/{clearedStep}/{clearingVacancy}/{user}/localAddress', 'loc
 
 //user information get
 Route::get('/stepsImportant', 'userInformation@index')->name('stepsInportant'); //this will show the user information page
+//form action field
+Route::post('/stepsImportant/save', 'userInformation@store')->name('stepsSave');
 //routes for detail parcels end
  /*
 end of route
