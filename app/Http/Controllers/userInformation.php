@@ -66,7 +66,7 @@ class userInformation extends Controller
         $userInformationSave = new BauserInformation([
             'userID' => \Auth::user()->id,
             'fullname' => $request->get('fullname'),
-            'fatherName' => $request->get('fatherNamae'),
+            'fatherName' => $request->get('fatherName'),
             'Mothername' => $request->get('Mothername'),
             'dobdate' => $request->get('dobdate'),
             'dobmonth' => $request->get('dobmonth'),
@@ -81,13 +81,15 @@ class userInformation extends Controller
             'district' => $request->get('district'),
             'block' => $request->get('block'),
             'tahsil' => $request->get('tahsil'),
-            'village' => $request>get('village'),
+            'village' => $request->get('village'),
             'maritalStatus' => $request->get('maritalStatus'),
             'spouseName' => $request->get('spouseName'),
             'children' => $request->get('children')
         ]);
-        $userInformationSave->save();
-        return redirect()->route('home')->with('message', 'Your information is saved now');
+
+       $userInformationSave->save();
+
+      return redirect()->route('importantstepupdate',['nextStep' => 1])->with('message', 'Your information is saved now');
     }
 
     /**

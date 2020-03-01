@@ -120,6 +120,7 @@
                  <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> --}}
                </div>
              </div>
+            <button type="button" name="steps" id="steps" onclick="window.location.href = '{{route('stepsControllerImportant')}}'" class="btn btn-info btn-lg btn-block">Important Steps&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>&nbsp;
              <div class="card card-primary">
                <div class="card-header">
                  <h3 class="card-title text-uppercase">About Me</h3>

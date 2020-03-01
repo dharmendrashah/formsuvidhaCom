@@ -66,11 +66,18 @@ Route::get('/vacancy/check/{user}', 'formStepsControll@stepsGet')->name('');
 
 Route::post('/vacancy/{clearedStep}/{clearingVacancy}/{user}/localAddress', 'localAddress@store')->name('localAddress');
 
+//userimportantstepsController
+Route::get('/stepsFollow', 'importantStepsController@index')->name('stepsControllerImportant');
+Route::get('/stepsFollow/these', 'importantStepsController@checkUserStep')->name('stepsControllerFollow');
+Route::get('/stepsFollow/these/{nextStep}', 'importantStepsController@updateChekUserSteps')->name('importantstepupdate');
 //user information get
 Route::get('/stepsImportant', 'userInformation@index')->name('stepsInportant'); //this will show the user information page
 //form action field
 Route::post('/stepsImportant/save', 'userInformation@store')->name('stepsSave');
 //routes for detail parcels end
+
+//educationQualification
+Route::get('/educationQualificationUpdate', 'educationController@index')->name('educationInformationUpdate');
  /*
 end of route
  */

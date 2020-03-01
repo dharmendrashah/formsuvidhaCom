@@ -33,7 +33,6 @@ class HomeController extends Controller
         $actualStatus = $jsonStatus['0']['status'];
         switch ($actualStatus) {
             case 3:
-                flash("Please complete the followng steps to fill vacancies. <a href='/stepsImportant'>Important steps</a>")->important();
                 $profile = DB::table('users')->join('basic_details', 'basic_details.userID', '=', 'users.id')->join('other_details', 'other_details.userID', '=', 'users.id')->where('users.id', '=', \Auth::user()->id)->first();
                 return view('home', compact('profile'));
                 break;
