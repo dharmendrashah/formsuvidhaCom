@@ -78,6 +78,7 @@ Route::post('/stepsImportant/save', 'userInformation@store')->name('stepsSave');
 
 //educationQualification
 Route::get('/educationQualificationUpdate', 'educationController@index')->name('educationInformationUpdate');
+Route::post('/educationQualificationUpdate/store', 'educationController@store')->name('educationInformationStore');
  /*
 end of route
  */

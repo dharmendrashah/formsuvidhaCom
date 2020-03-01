@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\educatioDetailsUpdateStore;
 class educationController extends Controller
 {
     /**
@@ -34,7 +34,7 @@ class educationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**

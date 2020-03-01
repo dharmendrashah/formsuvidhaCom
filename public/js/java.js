@@ -482,4 +482,127 @@ $('form input[name="children"]').prop("disabled", true);
 
 
 });
+
+//javascript
+$(document).ready(function() {
+    $('#senrollNumber').prop('disabled', true);
+    $('#sentotalMarks').prop('disabled', true);
+    $('#senobtainedmarks').prop('disabled', true);
+    $('#senpassingYear').prop('disabled', true);
+    $('#twelfthMarksheetCopy').prop('disabled', true);
+
+    //
+
+    $('#twelfthClassStatus').change(function(){
+        if($(this).val() == 'Passed'){
+            $('#senboardName').prop('disabled', false);
+            $('#senschoolName').prop('disabled', false);
+            $('#senschoolAddress').prop('disabled', false);
+            $('#streamOfStudyInSecondaryEducation').prop('disabled', false);
+            $('#senrollNumber').prop('disabled', false);
+            $('#sentotalMarks').prop('disabled', false);
+            $('#senobtainedmarks').prop('disabled', false);
+            $('#senpassingYear').prop('disabled', false);
+        }else if($(this).val() == 'Not Studying'){
+            $('#senboardName').prop('disabled', true);
+            $('#senschoolName').prop('disabled', true);
+            $('#senschoolAddress').prop('disabled', true);
+            $('#streamOfStudyInSecondaryEducation').prop('disabled', true);
+            $('#senrollNumber').prop('disabled', true);
+            $('#sentotalMarks').prop('disabled', true);
+            $('#senobtainedmarks').prop('disabled', true);
+            $('#senpassingYear').prop('disabled', true);
+        }else{
+            $('#senboardName').prop('disabled', false);
+            $('#senschoolName').prop('disabled', false);
+            $('#senschoolAddress').prop('disabled', false);
+            $('#streamOfStudyInSecondaryEducation').prop('disabled', false);
+            $('#senrollNumber').prop('disabled', true);
+            $('#sentotalMarks').prop('disabled', true);
+            $('#senobtainedmarks').prop('disabled', true);
+            $('#senpassingYear').prop('disabled', true);
+            $('#twelfthMarksheetCopy').prop('disabled', true);
+        }
+    });
+});
+
+
+$(document).ready(function(){
+                $('#finalYearRollNumberUg').prop('disabled',true);
+                $('#finalyearmarsksheetUG').prop('disabled',true);
+                $('#ugFinalYearObtainedMarks').prop('disabled',true);
+                $('#ugFinalMarksheet').prop('disabled',true);
+   //
+   $("#underGraduationStatus").change(function() {
+         if($(this).val() =='Passed'){
+                $('#ugCollageName').prop('disabled',false);
+                $('#ugUniversityName').prop('disabled',false);
+                $('#streamOfStudyUg').prop('disabled',false);
+                $('#ugCollageAddress').prop('disabled',false);
+                $('#finalYearRollNumberUg').prop('disabled',false);
+                $('#finalyearmarsksheetUG').prop('disabled',false);
+                $('#ugFinalYearObtainedMarks').prop('disabled',false);
+                $('#ugFinalMarksheet').prop('disabled',false);
+         }else if($(this).val() == 'Not Studying'){
+                $('#ugCollageName').prop('disabled',true);
+                $('#ugUniversityName').prop('disabled',true);
+                $('#streamOfStudyUg').prop('disabled',true);
+                $('#ugCollageAddress').prop('disabled',true);
+                $('#finalYearRollNumberUg').prop('disabled',true);
+                $('#finalyearmarsksheetUG').prop('disabled',true);
+                $('#ugFinalYearObtainedMarks').prop('disabled',true);
+                $('#ugFinalMarksheet').prop('disabled',true);
+         }else{
+                $('#ugCollageName').prop('disabled',false);
+                $('#ugUniversityName').prop('disabled',false);
+                $('#streamOfStudyUg').prop('disabled',false);
+                $('#ugCollageAddress').prop('disabled',false);
+                $('#finalYearRollNumberUg').prop('disabled',true);
+                $('#finalyearmarsksheetUG').prop('disabled',true);
+                $('#ugFinalYearObtainedMarks').prop('disabled',true);
+                $('#ugFinalMarksheet').prop('disabled',true);
+         }
+ });
+});
+
+
+
+$(document).ready(function(){
+    $('#finalYearRollNumberPg').prop('disabled',true);
+   $('#finalyearmarsksheetPG').prop('disabled',true);
+   $('#pgFinalYearObtainedMarks').prop('disabled',true);
+    $('#pgFinalMarksheet').prop('disabled',true);
+
+   //
+   $("#postGraduationStatus").change(function() {
+         if($(this).val() =='Passed'){
+            $('#pgCollageName').prop('disabled',false);
+            $('#pgUniversityName').prop('disabled',false);
+            $('#streamOfStudyPg').prop('disabled',false);
+            $('#pgCollageAddress').prop('disabled',false);
+            $('#finalYearRollNumberPg').prop('disabled',false);
+            $('#finalyearmarsksheetPG').prop('disabled',false);
+            $('#pgFinalYearObtainedMarks').prop('disabled',false);
+            $('#pgFinalMarksheet').prop('disabled',false);
+         }else if($(this).val() == 'Not Studying'){
+            $('#pgCollageName').prop('disabled',true);
+            $('#pgUniversityName').prop('disabled',true);
+            $('#streamOfStudyPg').prop('disabled',true);
+            $('#pgCollageAddress').prop('disabled',true);
+            $('#finalYearRollNumberPg').prop('disabled',true);
+            $('#finalyearmarsksheetPG').prop('disabled',true);
+            $('#pgFinalYearObtainedMarks').prop('disabled',true);
+            $('#pgFinalMarksheet').prop('disabled',true);
+         }else{
+            $('#pgCollageName').prop('disabled',false);
+            $('#pgUniversityName').prop('disabled',false);
+            $('#streamOfStudyPg').prop('disabled',false);
+            $('#pgCollageAddress').prop('disabled',false);
+            $('#finalYearRollNumberPg').prop('disabled',true);
+            $('#finalyearmarsksheetPG').prop('disabled',true);
+            $('#pgFinalYearObtainedMarks').prop('disabled',true);
+            $('#pgFinalMarksheet').prop('disabled',true);
+         }
+ });
+});
   //end
