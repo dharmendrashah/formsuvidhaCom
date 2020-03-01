@@ -29,6 +29,6 @@ class ImportantStepsController extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('importantStepsController');
     }
 }

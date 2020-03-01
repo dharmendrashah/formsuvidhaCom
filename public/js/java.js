@@ -503,6 +503,7 @@ $(document).ready(function() {
             $('#sentotalMarks').prop('disabled', false);
             $('#senobtainedmarks').prop('disabled', false);
             $('#senpassingYear').prop('disabled', false);
+            $('#twelfthMarksheetCopy').prop('disabled', false);
         }else if($(this).val() == 'Not Studying'){
             $('#senboardName').prop('disabled', true);
             $('#senschoolName').prop('disabled', true);
@@ -512,6 +513,7 @@ $(document).ready(function() {
             $('#sentotalMarks').prop('disabled', true);
             $('#senobtainedmarks').prop('disabled', true);
             $('#senpassingYear').prop('disabled', true);
+            $('#twelfthMarksheetCopy').prop('disabled', true);
         }else{
             $('#senboardName').prop('disabled', false);
             $('#senschoolName').prop('disabled', false);
