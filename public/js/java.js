@@ -607,4 +607,106 @@ $(document).ready(function(){
          }
  });
 });
+
+//thus ius ioer
+ //custom js for passport size photograph
+ function passImage(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#defpic').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#passPic").change(function(){
+    passImage(this);
+});
+
+//hindi signature
+function hindiSignature(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#defhindisig').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#hindiSignature").change(function(){
+    hindiSignature(this);
+});
+//english signature]
+function englishSignature(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#defengsig').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#englishSignature").change(function(){
+    englishSignature(this);
+});
+
+//leftThumbprint
+function leftThumbPrint(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#defleftthumb').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#leftThumbprint").change(function(){
+    leftThumbPrint(this);
+});
+
+//rightThumbSignature
+function rightThumbPrint(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#defRightThumb').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#rightThumbprint").change(function(){
+    rightThumbPrint(this);
+});
+
+//aadharcardsig
+function aadharCard(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#defAadhar').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#aadharcardpic").change(function(){
+    aadharCard(this);
+});
   //end

@@ -36,7 +36,7 @@ class importantStepsController extends Controller
             break;
 
             case 2:
-                echo 'this is step two';
+                return redirect()->route('userUpdateRequest');
             break;
             default:
                 echo 'internal error: 503';

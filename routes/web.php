@@ -79,6 +79,11 @@ Route::post('/stepsImportant/save', 'userInformation@store')->name('stepsSave');
 //educationQualification
 Route::get('/educationQualificationUpdate', 'educationController@index')->name('educationInformationUpdate');
 Route::post('/educationQualificationUpdate/store', 'educationController@store')->name('educationInformationStore');
+
+//important documents update
+Route::get('/userDetailsUpdateRequest', 'userDetailsUpdateRequest@index')->name('userUpdateRequest');
+//storing the data
+Route::post('/userDetailsUpdateRequest', 'userDetailsUpdateRequest@store')->name('userUpdateRequestStore');
  /*
 end of route
  */
