@@ -84,6 +84,9 @@ Route::post('/educationQualificationUpdate/store', 'educationController@store')-
 Route::get('/userDetailsUpdateRequest', 'userDetailsUpdateRequest@index')->name('userUpdateRequest');
 //storing the data
 Route::post('/userDetailsUpdateRequest', 'userDetailsUpdateRequest@store')->name('userUpdateRequestStore');
+
+//this page will print page
+Route::get('/thisPageIsPrinting', 'thispagewillprintuserDataController@index')->name('printPage');
  /*
 end of route
  */

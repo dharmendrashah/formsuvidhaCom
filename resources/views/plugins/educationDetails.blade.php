@@ -1,4 +1,5 @@
 {{--Start--}}
+<div class="container-fluid">
 <form action="{{route('educationInformationStore')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="container-fluid">
@@ -327,8 +328,8 @@
             <div class="form-group">
               <label for="finalYearRollNumberUg">Final Year Roll number</label>
               <input type="number"
-                class="form-control @error('finalyearmarsksheetUG') is-invalid @enderror" name="finalYearRollNumberUg" id="finalYearRollNumberUg" aria-describedby="finalYearRollNumUg" placeholder="Final year Roll Number">
-                @error('finalyearmarsksheetUG')
+                class="form-control @error('finalYearRollNumberUg') is-invalid @enderror" name="finalYearRollNumberUg" id="finalYearRollNumberUg" aria-describedby="finalYearRollNumUg" placeholder="Final year Roll Number">
+                @error('finalYearRollNumberUg')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
@@ -375,7 +376,7 @@
                    <strong>{{ $message }}</strong>
                </span>
            @enderror
-               <small id="ugMarksheet" class="form-text text-muted">Under graaduation fianl year marksheet</small>
+               <small id="ugMarksheet" class="form-text text-muted">Under graaduation final year marksheet</small>
              </div>
           </div>
         </div>
@@ -514,4 +515,5 @@
         <<button type="submit" name="submitThis" id="submitThisEducationInformation" class="btn btn-primary btn-lg btn-block">Submit </button>
     </div>
 </form>
+</div>
 {{--end--}}
