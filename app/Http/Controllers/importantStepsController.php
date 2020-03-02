@@ -38,6 +38,9 @@ class importantStepsController extends Controller
             case 2:
                 return redirect()->route('userUpdateRequest');
             break;
+            case 3:
+                echo 'this time to build the database and show them what do you update';
+            break;
             default:
                 echo 'internal error: 503';
                 break;
